@@ -1,14 +1,9 @@
+import 'package:color_scheme_chooser/color_scheme_chooser_app.dart';
+import 'package:color_scheme_chooser/data/palettes_repository.dart';
+import 'package:color_scheme_chooser/domain/repository.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const ColorSchemeChooser());
+  runApp(const ColorSchemeChooserApp());
 }
 
-class ColorSchemeChooser extends StatelessWidget {
-  const ColorSchemeChooser({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}

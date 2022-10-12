@@ -1,5 +1,5 @@
 class PaletteResponseModel {
-  String? id;
+  int? id;
   String? title;
   String? userName;
   int? numViews;
@@ -27,11 +27,11 @@ class PaletteResponseModel {
 
   factory PaletteResponseModel.fromJson(Map<String, dynamic> json) {
     return PaletteResponseModel(
-      id: json['id'].toString(),
+      id: json['id'],
       title: json['title'],
       userName: json['userName'],
       numViews: json['numViews'],
-      numHearts: json['numHearts'],
+      numHearts: json['numHearts'].toDouble(),
       rank: json['rank'],
       dateCreated: json['dateCreated'],
       colors: json['colors'],
